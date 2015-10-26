@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Documentation for "Appland – Apps Landing Page (HTML)" - Visit the website: UnreaLSnake.com -->
+
+<head>
+
+    <title>Documentation for "Appland – Apps Landing Page (HTML)"</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="UnreaLSnake" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/extra.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Electrolize" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Exo+2:400,400italic,700,700italic&amp;subset=latin,cyrillic" />
+
+    <link rel="icon" href="images/favicon.ico" />
+
+</head>
+
+<body>
+
+<!-- Site -->
+<div class="site">
+
+    <!-- Site Header -->
+    <header class="site_header">
+
+        <!-- Section -->
+        <div class="section-focus section-focus--home">
+
+            <!-- Content -->
+            <div class="content-base">
+
+                <!-- Main Logo -->
+                <div class="main-logo">
+                    <span class="main-logo_text">Appland<sup>h</sup></span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <!-- Desktop Menu -->
+                    <ul class="main-nav_list">
+                        <li><a href="http://themeforest.net/item/appland-premium-responsive-landing-page/4851031?ref=UnreaLSnake">Appland on ThemeForest</a></li>
+                        <li><a href="http://themeforest.net/user/UnreaLSnake/portfolio?ref=UnreaLSnake">Portfolio on ThemeForest</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- Content -->
+
+            <!-- Content -->
+            <div class="content-base">
+
+                <!-- Page Header -->
+                <div class="page-header">
+
+                    <!-- Header -->
+                    <div class="page-header_text">
+                        <h1>Documentation</h1>
+                        <span>I would like to thank you for purchasing "Appland – Apps Landing Page (HTML)"! Before you get started, please be sure to always check out these documentation files.</span>
+                    </div>
+
+                </div>
+                <!-- Page Header -->
+
+            </div>
+            <!-- Content -->
+
+        </div>
+        <!-- Section -->
+
+    </header>
+    <!-- Site Header -->
+
+    <!-- Site Main -->
+    <div class="site_main">
+
+        <!-- Section -->
+        <div class="section-base">
+
+            <!-- Content -->
+            <main class="content-base">
+
+                <!-- Post -->
+                <article class="post post--text">
+
+                    <!-- Main -->
+                    <section class="post_main">
+
+                        <!-- Content -->
+
+<h2>HTML Structure</h2>
+
+<p>This theme is a responsive layout with one columns. All of the information within the main content area is nested within a sections with an class of "content". The general template structure is the same throughout the template. Here is the general structure.</p>
+
+<pre>&#60;!-- Site Header --&#62;
+&#60;header id="site_header"&#62;
+
+    &#60;!-- Content Area --&#62;
+    &#60;div class="container"&#62;
+
+        &#60;!-- Section --&#62;
+        &#60;section class="content"&#62;
+
+        &#60;/section&#62;
+        &#60;!-- Section--&#62;
+
+    &#60;/div&#62;
+    &#60;!-- Content Area --&#62;
+
+&#60;/header&#62;
+&#60;!-- Site Header --&#62;
+
+&#60;!-- Site Main --&#62;
+&#60;main id="site_main"&#62;
+
+    &#60;!-- Content Area --&#62;
+    &#60;div class="container"&#62;
+
+        &#60;!-- Section --&#62;
+        &#60;section class="content"&#62;
+
+        &#60;/section&#62;
+        &#60;!-- Section --&#62;
+
+    &#60;/div&#62;
+    &#60;!-- Content Area --&#62;
+
+    &#60;!-- Content Area --&#62;
+    &#60;div class="container"&#62;
+
+        &#60;!-- Section --&#62;
+        &#60;section class="content"&#62;
+
+        &#60;/section&#62;
+        &#60;!-- Section --&#62;
+
+    &#60;/div&#62;
+    &#60;!-- Content Area --&#62;
+
+&#60;/main&#62;
+&#60;!-- Site Main --&#62;
+
+&#60;!-- Site Footer --&#62;
+&#60;footer id="site_footer"&#62;
+
+    &#60;!-- Content Area --&#62;
+    &#60;div class="container"&#62;
+
+        &#60;!-- Section --&#62;
+        &#60;section class="content"&#62;
+
+        &#60;/section&#62;
+        &#60;!-- Section - Contact --&#62;
+
+    &#60;/div&#62;
+    &#60;!-- Content Area --&#62;
+
+&#60;/footer&#62;
+&#60;!-- Site Footer --&#62;</pre>
+
+<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>.hc-menu li a {
+    color: #someColor;
+}</pre>
+
+<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight. I.E.</p>
+
+<pre>.hc-menu li a:hover {
+    color: #someColor;
+}</pre>
+
+<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p>
+
+<h2>CSS Files and Structure</h2>
+
+<p>I'm using five CSS files in this theme. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling. Keep in mind, that these values might be overridden somewhere else in the file.</p>
+
+<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>
+
+                    <pre>/**********************************************************/
+/*** MAIN LAYOUT ******************************************/
+
+/*-- Body ------------------------------------------------*/
+
+some code
+
+/*-- Error --*/
+
+some code
+
+/*-- Containers ------------------------------------------*/
+
+/*-- Site --*/
+
+some code
+
+/*-- Header --*/
+
+some code
+
+/*-- Header > Content --*/
+
+some code
+
+/*-- Main --*/
+
+some code
+
+/*-- Main > Content --*/
+
+some code
+
+/*-- Footer --*/
+
+some code
+
+/*-- Footer > Content --*/
+
+some code
+
+/**********************************************************/
+/*** BASE UI **********************************************/
+
+/*-- Input -----------------------------------------------*/
+
+some code
+
+/*-- Textarea --------------------------------------------*/
+
+some code
+
+/*-- Button ----------------------------------------------*/
+
+some code
+
+/*-- Transitions -----------------------------------------*/
+
+some code
+
+etc, etc.</pre>
+
+<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+
+<p>Any images that are placed within the blog section have 1px border, 4px worth of padding and a light grey background. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+
+<pre>.features {
+    change styles here:
+}
+
+.features img {
+    change styles here:
+}</pre>
+
+<h2>JavaScript Files</h2>
+
+<p>This theme imports fifteen JavaScript files.</p>
+
+<ol class="list-ol">
+    <li>jQuery 1.10.2 - jQuery JavaScript Plugin</li>
+    <li>HTML5 Shiv 3.6.2 - Enables use of HTML5 sectioning elements in IE 6-8</li>
+    <li>Respond 1.1.0 - CSS3 Media Queries for IE 6-8</li>
+    <li>Selectivizr 1.0.2 - Emulates CSS3 pseudo-classes and attribute selectors in IE 6-8</li>
+    <li>Easing 1.3 - Plugin to give advanced easing options</li>
+    <li>hcSticky 1.1.95 - Makes elements on your page float as you scroll</li>
+    <li>ScrollTo 1.4.6 - Easy element scrolling</li>
+    <li>One Page Nav 2.2.0 - Navigation on one-page sites</li>
+    <li>Lightbox 2.6 - Used to overlay images on top of the current page</li>
+    <li>ElasticSlideshow 1.0.0 - Simple elastic slideshow with a thumbnail preview</li>
+    <li>Tweet.js Mod 1.4.0 - Put twitter on your website with tweet</li>
+    <li>GMaps 0.4.4 - Adds Google Map on your website</li>
+    <li>Animate 1.0.0</li>
+    <li>Contact Form 1.0.0</li>
+    <li>Settings 1.0.0</li>
+</ol>
+
+<p>jQuery is a Javascript library that greatly reduces the amount of code that you must write. Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.</p>
+
+<pre>$(".scroll-gallery").sliderkit({
+    auto:false,
+    shownavitems:3,
+    scroll:1
+});</pre>
+
+<h2>Source & Credits</h2>
+
+<h4>Fonts</h4>
+<ul class="list-ul">
+	<li><a href="http://www.google.com/fonts/specimen/Noto+Sans">Noto Sans</a> – Google (Apache License, version 2.0)</li>
+</ul>
+
+<h4>Scripts</h4>
+<ul class="list-ul">
+	<li><a href="http://jquery.com/">jQuery 1.11.2</a> – jQuery Foundation, Inc. (MIT License)</li>
+    <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">Easing 1.3</a> - George McGinley Smith (BSD License)</li>
+    <li><a href="http://someweblog.com/hcsticky-jquery-floating-sticky-plugin/">hcSticky 1.2.43</a> - Some Web Media (MIT License)</li>
+    <li><a href="http://github.com/flesler/jquery.scrollTo">ScrollTo 2.1.1</a> - Ariel Flesler (MIT/GPL License)</li>
+    <li><a href="http://github.com/davist11/jQuery-One-Page-Nav">One Page Nav 3.0.0</a> - Trevor Davis (MIT/GPL License)</li>
+    <li><a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox 2.7.1</a> - Lokesh Dhakar (Creative Commons Attribution 2.5 License)</li>
+    <li><a href="http://tympanus.net/codrops/2011/11/21/elastic-image-slideshow-with-thumbnail-preview/">ElasticSlideshow 1.0.0</a> - Mary Lou (MIT License)</li>
+    <li><a href="http://github.com/StanScates/Tweet.js-Mod">Tweet.js Mod 1.4.0</a> - Stan Scates (MIT License)</li>
+    <li><a href="http://hpneo.github.io/gmaps/">GMaps 0.4.17</a> - Gustavo Leon (MIT License)</li>
+    <li>Animate 1.0.0, Contact Form 1.0.0, Settings 1.0.2 - UnreaLSnake</li>
+</ul>
+
+<h4>Mockups</h4>
+<ul class="list-ul">
+	<li><a href="http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-vector-mockup">Apple iPhone 5 2 Colors Portrait</a> – Pixeden.com</li>
+</ul>
+
+<h4>Graphics</h4>
+<ul class="list-ul">
+	<li><a href="http://iconmonstr.com/">Iconmonstr.com</a> – different icons</li>
+	<li><a href="http://subtlepatterns.com/">SubtlePatterns.com</a> – background patterns</li>
+	<li><a href="http://unsplash.com">Unsplash</a> – demo backgrounds</li>
+	<li><a href="http://randomuser.me">Random User Generator</a> – demo avatars</li>
+</ul>
+
+                        <!-- Content -->
+
+                    </section>
+                    <!-- Main -->
+
+                </article>
+                <!-- Post -->
+
+            </main>
+            <!-- Content -->
+
+        </div>
+        <!-- Section -->
+
+        <!-- Section -->
+        <div class="section-plus">
+
+            <!-- Content -->
+            <div class="content-base">
+
+                <!-- Page Header -->
+                <div class="page-footer">
+
+                    <!-- Header -->
+                    <div class="page-footer_text">
+                        <span>If you have a more question relating to the Lance, you might consider visiting <a href="http://themeforest.net/item/appland-premium-responsive-landing-page/4851031?ref=UnreaLSnake">this page</a> and asking your question in comments.</span>
+                    </div>
+
+                </div>
+                <!-- Page Header -->
+
+            </div>
+            <!-- Content -->
+
+        </div>
+        <!-- Section -->
+
+    </div>
+    <!-- Site Main -->
+
+    <!-- Site Footer -->
+    <footer class="site_footer">
+
+        <!-- Section -->
+        <div class="section-minor">
+
+            <!-- Content -->
+            <div class="content-base">
+
+                <!-- Info Text -->
+                <div class="info-text">
+                    <small>&copy; 2015 Documentation for "Appland – Apps Landing Page (HTML)"</small>
+                </div>
+
+                <!-- Info Navigation -->
+                <div class="info-nav">
+                    <ul class="info-nav_list">
+                        <li><a href="http://unrealsnake.com/">UnreaLSnake.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Content -->
+
+        </div>
+        <!-- Section -->
+
+    </footer>
+    <!-- Site Footer -->
+
+</div>
+<!-- Site -->
+
+<!-- Scripts > Connection -->
+<script src="scripts/jquery-2.1.3.min.js"></script>
+<script src="scripts/waypoints-2.0.5.min.js"></script>
+<script src="scripts/hcsticky-1.2.43.min.js"></script>
+<script src="scripts/magnific-popup-1.0.0.min.js"></script>
+<script src="scripts/readmore.min.js"></script>
+<script src="scripts/settings-1.0.0.js"></script>
+<!-- Scripts > Connection -->
+
+<!-- Documentation for "Appland – Apps Landing Page (HTML)" - Visit the website: UnreaLSnake.com -->
+
+</body>
+</html>

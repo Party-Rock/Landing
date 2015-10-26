@@ -1,0 +1,117 @@
+/*----------------------------------------------------------------------------*/
+/*--- INFORMATION ------------------------------------------------------------*-
+
+    Name ........... "Appland – Apps Landing Page" (skin.css)
+    URL ............ http://themeforest.net/user/UnreaLSnake/portfolio
+    Version ........ 1.2.0 / April 26, 2015
+    License ........ http://themeforest.net/licenses/standard
+    Copyright ...... © 2013–2015 Alexander Antonov aka UnreaLSnake
+
+    Author ......... Alexander Antonov aka UnreaLSnake
+    Author URL's ... http://unrealsnake.com/ ... http://unrealsnake.ru/
+
+-*----------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------*/
+/*--- COLOR THEME ------------------------------------------------------------*/
+
+/*--- Main -------------------------------------------------------------------*/
+
+body {
+    background: fixed url(../images/bg-body.png) #db6e63;
+}
+
+abbr[title]:hover,
+a.dotted:link,
+a.dotted:visited {
+    color: #db6e63;
+    border-bottom: 1px dashed #db6e63;
+}
+
+mark,
+.info-block_icon img {
+    background: #db6e63;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 1px solid #db6e63;
+}
+
+button,
+a.button-s,
+a.button-m,
+a.button-l {
+    background-color: #db6e63;
+    border: 1px solid #db6e63;
+}
+
+::-webkit-selection {
+    background: #db6e63;
+}
+
+::-moz-selection {
+    background: #db6e63;
+}
+
+::selection {
+    background: #db6e63;
+}
+
+a:link,
+a:visited,
+.main-logo_color,
+.main-logo_link:hover,
+.contact-lite_color,
+.info-block:hover h3,
+.testimonials:hover h3,
+.pricing-table:hover .cell-title {
+    color: #db6e63;
+}
+
+a:hover {
+    color: #ffa500;
+}
+
+a.dotted:hover {
+    color: #ffa500;
+    border-bottom: 1px dashed #ffa500;
+}
+
+button,
+a.button-s,
+a.button-m,
+a.button-l {
+    color: #383838;
+}
+
+.main-nav_list a {
+    color: #383838;
+}
+
+.main-nav_list a:hover,
+.main-nav_list .active a,
+.main-nav_button:hover {
+    color: #db6e63;
+}
+
+.info-nav_list a {
+    color: #525252;
+}
+
+.info-nav_list a:hover,
+.info-nav_list .active a {
+    color: #db6e63;
+}
+
+.cell-price {
+    background-color: #db6e63;
+}
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*                     Visit the website: UnreaLSnake.com                     */
+/*----------------------------------------------------------------------------*/
